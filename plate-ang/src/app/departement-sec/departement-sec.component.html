@@ -1,0 +1,65 @@
+<div class="main-content bg-lighter">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg6.jpg">
+      <div class="container pt-70 pb-20">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title text-white text-center">Course Gird</h2>
+              <ol class="breadcrumb text-left text-black mt-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active text-gray-silver">Page Title</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Course gird -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 blog-pull-right">
+            
+             <div class="row">
+                <div class="col-sm-6 col-md-3" *ngFor="let section of sections">
+                  <div class="project mb-30 border-2px">
+                    <div class="thumb">
+                      <img class="img-fullwidth" alt="" src="../../assets/images/project/c1.jpg">
+                      <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="/section/{{ section.id }}"><span>$500</span> </a>
+                      </div>
+                    </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h4 class="font-weight-700 text-uppercase mt-0">
+                        <a href="page-courses-accounting-technologies.html">{{ section.nom }}</a>
+                    </h4>
+                    </div>
+                  </div>
+                </div> 
+             </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <nav>
+              <ul class="pagination xs-pull-center m-0">
+                <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a> </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">...</a></li>
+                <li> <a href="#" aria-label="Next"> <span aria-hidden="true">»</span> </a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

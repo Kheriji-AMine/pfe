@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Publication List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>idpuser_id</th>
+            <th>texte</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let publication of publications">
+            <td>{{publication.id}} </td>
+            <td> {{publication.idpuser_id}}</td>
+            <td> {{publication.texte}}</td>
+            <td>
+              <button (click)="EditPublication(publication.id)" class="btn btn-success">Modifier</button>
+            <button (click)="deletePublication(publication)" class="btn btn-danger">Supprimer</button>
+              <button (click)="publicationDetails(publication.id)" class="btn btn-info" style="margin-left: 10px">Afficher</button>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
